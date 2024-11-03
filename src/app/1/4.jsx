@@ -1,38 +1,28 @@
-// 3. 비디오 제어 예제:
+// 4. 이전 값 저장 예제:
 
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
-const VideoPlayer = () => {
-  const videoRef = useRef(null);
+const PreviousValue = () => {
+  const [count, setCount] = useState(0);
+  const prevCountRef = useRef(0);
 
-  const handlePlay = () => {
-    videoRef.current.play();
-  };
-
-  const handlePause = () => {
-    videoRef.current.pause();
+  const handleClick = () => {
+    prevCountRef.current = count;
+    setCount(count + 1);
   };
 
   return (
     <div>
-      <video 
-        ref={videoRef}
-        src="/sample-video.mp4" 
-        style={{ width: '300px' }}
-      />
-      <div>
-        <button onClick={handlePlay}>재생</button>
-        <button onClick={handlePause}>일시정지</button>
-      </div>
+      <p>현재 값: {count}</p>
+      <p>이전 값: {prevCountRef.current}</p>
+      <button onClick={handleClick}>증가</button>
     </div>
   );
 };
 
-export default VideoPlayer;
+export default PreviousValue;
 
-// 이 코드는 비디오 요소를 제어하는 예제입니다.
-// useRef로 video 요소를 참조하고, 버튼 클릭시 play()와 pause() 메서드를 호출하여 비디오를 제어합니다.
-
-
+// 이 코드는 상태의 이전 값을 저장하는 예제입니다.
+// useRef를 사용하여 이전 카운트 값을 저장하고, 버튼 클릭시 현재 값을 업데이트하면서 이전 값을 보존합니다.
