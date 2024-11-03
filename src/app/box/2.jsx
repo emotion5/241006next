@@ -57,10 +57,10 @@ export default ScrollControl;
 
 // 이 코드는 스크롤이 있는 컨텐츠 영역의 스크롤 위치를 제어하는 예제입니다.
 // useRef로 div 요소를 참조하고, 버튼 클릭시 scrollTop 속성을 조정하여 스크롤 위치를 변경합니다.
-```
+
 
 3. 비디오 제어 예제:
-```javascript
+
 'use client';
 
 import { useRef } from 'react';
@@ -95,10 +95,10 @@ export default VideoPlayer;
 
 // 이 코드는 비디오 요소를 제어하는 예제입니다.
 // useRef로 video 요소를 참조하고, 버튼 클릭시 play()와 pause() 메서드를 호출하여 비디오를 제어합니다.
-```
+
 
 4. 이전 값 저장 예제:
-```javascript
+
 'use client';
 
 import { useRef, useState } from 'react';
@@ -125,4 +125,4 @@ export default PreviousValue;
 
 // 이 코드는 상태의 이전 값을 저장하는 예제입니다.
 // useRef를 사용하여 이전 카운트 값을 저장하고, 버튼 클릭시 현재 값을 업데이트하면서 이전 값을 보존합니다.
-```​​​​​​​​​​​​​​​​
+```​​
