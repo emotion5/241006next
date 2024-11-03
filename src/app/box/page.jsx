@@ -1,7 +1,6 @@
-'use client';
 import { useRef } from 'react';
 
-export default function SimpleRef() {
+const SimpleRef = () => {
   const divRef = useRef(null);
 
   return (
@@ -9,4 +8,6 @@ export default function SimpleRef() {
       Hello World
     </div>
   );
-}
+};
+
+export default SimpleRef;
