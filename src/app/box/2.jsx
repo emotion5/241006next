@@ -1,7 +1,4 @@
-React의 useRef를 활용한 몇 가지 실용적인 예제를 보여드리겠습니다:
 
-1. 입력 필드 포커스 예제:
-```javascript
 'use client';
 
 import { useRef } from 'react';
