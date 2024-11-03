@@ -1,4 +1,4 @@
-
+1. 버튼틀릭
 'use client';
 
 import { useRef } from 'react';
@@ -22,10 +22,9 @@ export default InputFocus;
 
 // 이 코드는 버튼 클릭시 input 요소에 포커스를 주는 예제입니다.
 // useRef를 사용하여 input 요소를 참조하고, 버튼 클릭시 focus() 메서드를 호출합니다.
-```
 
 2. 스크롤 위치 제어 예제:
-```javascript
+
 'use client';
 
 import { useRef } from 'react';
